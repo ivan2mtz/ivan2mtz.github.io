@@ -1,45 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        h1 {
-            color: #5a5a5a;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesor & Consultor en Programación</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #212529;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>¡Bienvenido a mi sitio web!</h1>
-    </header>
-
-    <main>
-        <p>Esta es una página web muy simple creada con HTML. Es un buen punto de partida para aprender a programar.</p>
-        <p>Puedes agregar más contenido, como imágenes, enlaces o listas.</p>
-
-        <h2>Contenido adicional</h2>
-        <ul>
-            <li>Elemento de lista 1</li>
-            <li>Elemento de lista 2</li>
-            <li>Elemento de lista 3</li>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mi Página</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Video Tutoriales</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos Presenciales</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
+      </div>
+    </div>
+  </nav>
 
-        <a href="https://www.google.com" target="_blank">Visita Google</a>
-    </main>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Asesor & Consultor en Programación</h1>
+    <p>Te ayudo a mejorar tus habilidades en desarrollo web, resolver proyectos y aprender con ejemplos prácticos.</p>
+    <a href="#contacto" class="btn btn-light btn-lg mt-3">Contáctame</a>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Mi Página Web</p>
-    </footer>
+  <!-- SERVICIOS -->
+  <section id="servicios" class="container py-5">
+    <h2 class="text-center mb-4">Servicios</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Asesoría Personalizada</h5>
+            <p class="card-text">Sesiones 1 a 1 para resolver tus dudas en HTML, CSS, JavaScript y frameworks modernos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Consultoría en Proyectos</h5>
+            <p class="card-text">Te ayudo a estructurar y optimizar proyectos web con buenas prácticas y escalabilidad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Mentoría Continua</h5>
+            <p class="card-text">Acompañamiento en tu proceso de aprendizaje y carrera en programación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- VIDEO TUTORIALES -->
+  <section id="videos" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Video Tutoriales</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" class="card-img-top" alt="Tutorial">
+            <div class="card-body">
+              <h5 class="card-title">Curso de HTML desde cero</h5>
+              <a href="https://youtube.com" target="_blank" class="btn btn-primary">Ver en YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" class="card-img-top" alt="Tutorial">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript en la práctica</h5>
+              <a href="https://youtube.com" target="_blank" class="btn btn-primary">Ver en YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS PRESENCIALES -->
+  <section id="cursos" class="container py-5">
+    <h2 class="text-center mb-4">Cursos Presenciales</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Taller Intensivo de Desarrollo Web</h5>
+            <p class="card-text">Aprende a crear sitios web modernos con HTML, CSS, JavaScript y Bootstrap en 2 días.</p>
+            <a href="#contacto" class="btn btn-outline-primary">Inscribirme</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Curso Avanzado de JavaScript</h5>
+            <p class="card-text">Profundiza en programación asíncrona, APIs y frameworks modernos.</p>
+            <a href="#contacto" class="btn btn-outline-primary">Inscribirme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Correo electrónico" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 - Mi Página Personal | Desarrollado con 💻 & Bootstrap</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
