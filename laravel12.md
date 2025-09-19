@@ -143,41 +143,62 @@ class EjemploController extends Controller
 ### Vista
 
 ```php
-<?php
+@extends('layouts.app')
+ 
+@section('title', 'Lista de productos')
+ 
+@section('content')
+    
+<div class="card my-3">
+  <div class="card-header">
 
-namespace App\Http\Controllers;
+    <div class="d-flex justify-content-between align-items-center">
+    <p class="mb-0">Productos</p>
 
-use Illuminate\Http\Request;
-use Illuminate\View\View;
-use Illuminate\Http\JsonResponse;
+    <a class="btn btn-sm btn-primary" href="{{ url('/producto/create');}}">Agregar</a>
+</div>
 
-class EjemploController extends Controller
-{
-    public function texto()
-    {
-        return 'Hola mundo!';
-    }
+  </div>
+  <div class="card-body">
+    
+    
+    @if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+    @endif
+    <table class="table table-bordered table-sm">
+        <thead>
+            <tr>
+                <th class="text-center">SKU</th>
+                <th class="text-center">NOMBRE</th>
+                <th class="text-center">MARCA</th>
+                <th class="text-center">PRECIO</th>
+                <th class="text-center">ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach ($productos as $item)
+            <tr>
+                <td>{{ $item->sku }}</td>
+                <td>{{ $item->nombre }}</td>
+                <td>{{ $item->marca }}</td>
+                <td class="text-end">{{ number_format($item->precio,2) }}</td>
+                <td class="text-center">
+                    <a class="btn btn-sm btn-secondary" href="{{ url('/producto/'.$item->id);}}">Ver</a>
+                    <a class="btn btn-sm btn-warning" href="{{ url('/producto/'.$item->id.'/edit');}}">Editar</a>
+                </td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
 
-    public function vista(): View
-    {
-        return view('hola', [
-            'texto' => 'Bienvenido al sistema'
-        ]);
-    }
+    {{ $productos->links() }}
 
-    public function json(): JsonResponse
-    {
-        return new JsonResponse([
-            'status' => 'success',
-            'message' => 'Data retrieved successfully',
-            'data' => [
-                'id' => 1,
-                'name' => 'Example Item',
-            ],
-        ]);
-    }
+    </div>
+</div>
 
-}
+@endsection
 ```
 
 
