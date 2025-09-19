@@ -107,4 +107,5 @@ INSERT INTO PRODUCTOS (sku, nombre, marca, precio) VALUES
 ('SKU097', 'Báscula inteligente Bluetooth', 'Etekcity', 25.00),
 ('SKU098', 'Proyector portátil de bolsillo', 'Anker Nebula', 300.00),
 ('SKU099', 'Cámara de acción 4K', 'GoPro', 350.00),
+
 ('SKU100', 'Drone con cámara 4K', 'DJI', 800.00);
