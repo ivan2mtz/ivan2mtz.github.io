@@ -1,6 +1,3 @@
----
-theme: jekyll-theme-dinky
----
 # Laravel 12
 ### ¿Que es un Framework?
 Un framework de desarrollo web es un conjunto de herramientas, bibliotecas y estructuras prediseñadas que facilitan y agilizan la creación de aplicaciones o sitios web. 
