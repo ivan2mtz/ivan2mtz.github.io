@@ -7,7 +7,7 @@
 - Vistas y URLs	
 - Templates (Front-end Básico)
 - Formularios
-- Autenticacion de usuarios
+- Autenticacion de usuarios  
 
 
 - Introducción a Django y el Proyecto	
