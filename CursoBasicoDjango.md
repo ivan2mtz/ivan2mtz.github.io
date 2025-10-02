@@ -1,15 +1,14 @@
 # 🐍 Curso Básico de Django
 
 
-- Configuración del Entorno
-- Introducción a Django y el Proyecto
-- Arquitectura Web (Conceptos)
-- Modelos y Base de Datos (ORM)
-- Vistas y URLs	
-- Templates (Front-end Básico)
-- Formularios
-- Autenticacion de usuarios    
-
+1. Configuración del Entorno
+2. Introducción a Django y el Proyecto
+3. Arquitectura Web (Conceptos)
+4. Modelos y Base de Datos (ORM)
+5. Vistas y URLs	
+6. Templates (Front-end Básico)
+7. Formularios
+8. Autenticacion de usuarios    
 
 
 - Introducción a Django y el Proyecto	
