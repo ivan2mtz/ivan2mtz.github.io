@@ -1,0 +1,20 @@
+# 🐍 Curso Básico de Django
+
+- Configuración del Entorno
+- Introducción a Django y el Proyecto
+- Arquitectura Web (Conceptos)
+- Modelos y Base de Datos (ORM)
+- Vistas y URLs	
+- Templates (Front-end Básico)
+- Formularios
+- Autenticacion de usuarios
+
+
+- Introducción a Django y el Proyecto	
+  - Arquitectura Web (Conceptos): ¿Qué es un framework? MVC (o MVT en Django). Primer Proyecto Django: Crear y configurar un proyecto base. Archivos clave: settings.py y urls.py principales. La App: Crear la primera aplicación dentro del proyecto.
+- Modelos y Base de Datos (ORM)	
+  - El Modelo: Definir el primer Modelo (ej. un objeto "Post" o "Task"). Tipos de campos comunes. Migraciones: Entender y ejecutar makemigrations y migrate. Introducción al Admin de Django y registro del modelo.
+- Vistas y URLs	
+  - Flujo de Solicitud: Cómo una petición viaja desde el navegador hasta la vista. Vistas Basadas en Funciones (FBV): Escribir una vista simple que retorne un HttpResponse. Mapear la vista en el archivo urls.py de la aplicación.
+- Templates (Front-end Básico)	
+  - Templates Básicos: Usar render en la vista para mostrar un archivo HTML. Entender el directorio templates. Lenguaje de Templates de Django: Uso de {{ variables }} y tags de control ({% for %}, {% if %}) para pasar datos del Modelo a la vista.
