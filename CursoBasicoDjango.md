@@ -1,6 +1,6 @@
 # 🐍 Curso Básico de Django
 
-
+### Módulos
 1. Configuración del Entorno
 2. Introducción a Django y el Proyecto
 3. Arquitectura Web (Conceptos)
@@ -10,7 +10,7 @@
 7. Formularios
 8. Autenticacion de usuarios    
 
-
+### Temas clave (Enfoque práctico)
 - Introducción a Django y el Proyecto	
     - Arquitectura Web (Conceptos): ¿Qué es un framework? MVC (o MVT en Django). Primer Proyecto Django: Crear y configurar un proyecto base. Archivos clave: settings.py y urls.py principales. La App: Crear la primera aplicación dentro del proyecto.
 - Modelos y Base de Datos (ORM)	
